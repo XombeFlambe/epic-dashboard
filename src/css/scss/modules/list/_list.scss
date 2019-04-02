@@ -1,0 +1,35 @@
+/*----------------------------------------------------------------------
+ List Styles
+----------------------------------------------------------------------*/
+.list_bullet {
+	margin-left: 16px;
+	list-style-type: disc;
+}
+
+.list_number {
+	margin-left: 18px;
+	list-style-type: decimal;
+}
+
+.list_reset {
+	margin-left: 0;
+	list-style-type: none;
+}
+
+.list_indent {margin-left: 26px;}
+
+.list > li {margin-bottom: 10px;}
+
+.list_tight > li {margin-bottom: 5px;}
+
+.list > li > ul {margin-bottom: 0;}
+
+.list_box {
+	margin-bottom: 0;
+}
+
+.list_box > li {
+	margin-bottom: 0;
+	padding: 10px;
+	border-top: 1px solid $GRAY_LIGHT;
+}

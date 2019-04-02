@@ -1,0 +1,26 @@
+/*----------------------------------------------------------------------
+ Wraps
+----------------------------------------------------------------------*/
+.wrap {position: relative;}
+
+.wrap_content {
+	max-width: $SITE_MAX_WIDTH +20px;
+	padding: 20px 10px 20px;
+	background: #ffffff;
+	z-index: 1;
+	@include baseText();
+}
+
+.wrap_alignCenter,
+.wrap_alignCenterMobile {text-align: center;}
+
+.wrap_alignRight {text-align: right;}
+
+.wrap_scroll200 {
+	max-height: 140px;
+	overflow: auto;
+}
+
+.wrap_brandPrimaryLight {background: $BRAND_LIGHT;}
+.wrap_brandSecondary {background: $BRAND_SECONDARY;}
+.wrap_grayXLight {background: $GRAY_XLIGHT;}

@@ -1,0 +1,15 @@
+/*----------------------------------------------------------------------
+ Grid Med
+----------------------------------------------------------------------*/
+.grid-col ~ .grid-col {margin-left: 1.95%;}
+
+/* 4 column grid */
+.grid-col_1of4 {width: 23.53%;}
+.grid-col_2of4 {width: 49.02%;}
+.grid-col_3of4 {width: 74.51%;}
+.grid-col_4of4 {width: 100%;}
+
+/* 3 column grid */
+.grid-col_1of3 {width: 32.03%;}
+.grid-col_2of3 {width: 66.02%;}
+.grid-col_3of3 {width: 100%;}

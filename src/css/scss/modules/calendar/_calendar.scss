@@ -1,0 +1,175 @@
+/*----------------------------------------------------------------------
+ Calendar Styles, Custom
+----------------------------------------------------------------------*/
+.calendar {
+	padding: 0 10px 20px;
+	text-align: center;
+}
+
+.calendar-hd {
+	width: 100%;
+	font-size: 0;
+}
+
+.calendar-hd > li {
+	display: inline-block;
+	width: 14.28%;
+	padding: 10px;
+	color: $GRAY;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.calendar-list {
+	width: 100%;
+	border-left: 1px solid $GRAY_XLIGHT;
+	border-top: 1px solid $GRAY_XLIGHT;
+	font-size: 0;
+}
+
+.calendar-list > li {
+	display: inline-block;
+	width: 14.28%;
+	height: 40px;
+	padding: 5px;
+	border-right: 1px solid $GRAY_XLIGHT;
+	border-bottom: 1px solid $GRAY_XLIGHT;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 1;
+	vertical-align: top;
+	cursor: pointer;
+}
+
+.calendar-list > li:nth-child(7n+1),
+.calendar-list > li:nth-child(7n+7) {color: $GRAY;}
+
+.calendar-list > li.active,
+.calendar-list > li:hover {
+	background: $BRAND_SECONDARY_LIGHT;
+
+	.calendar-mark {background: $WHITE;}
+}
+
+.calendar-list > li.inActive:hover {
+	background: none;
+	cursor: default;
+}
+
+.calendar-mark {
+	display: block;
+	margin: 5px auto 0;
+	border-radius: 50%;
+	width: 10px;
+	height: 10px;
+	background: $BRAND_SECONDARY_DARK;
+}
+
+//----------------------------------------------------------------------
+// Calendar Styles, JQuery Datepicker
+//----------------------------------------------------------------------
+.ui-datepicker {
+	text-align: center;
+	user-select: none;
+}
+
+.ui-datepicker-header {
+	position: relative;
+	background: $GRAY_XXLIGHT;
+}
+
+.ui-datepicker-prev,
+.ui-datepicker-next {
+	display: block;
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	top: 10px;
+	left: 50%;
+	color: $BLACK;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.ui-datepicker-prev:hover,
+.ui-datepicker-next:hover {text-decoration: none;}
+
+.ui-datepicker-prev {margin-left: -89px;}
+.ui-datepicker-next {margin-left: 73px;}
+
+.ui-datepicker-prev span,
+.ui-datepicker-next span {
+	display: table;
+}
+
+.ui-datepicker-title {
+	padding: 10px 0;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.ui-datepicker-calendar {
+	width: 100% - 4%;
+	margin: 0 2% 20px;
+
+	th {
+		padding: 10px;
+		color: $GRAY;
+		font-weight: 700;
+	}
+
+	tbody {
+		border-top: 1px solid $GRAY_XLIGHT;
+		border-left: 1px solid $GRAY_XLIGHT;
+	}
+
+	td {
+		vertical-align: top;
+		border-right: 1px solid $GRAY_XLIGHT;
+		border-bottom: 1px solid $GRAY_XLIGHT;
+	}
+}
+
+.ui-state-default {
+	display: block;
+	width: 100%;
+	height: 40px;
+	padding: 5px 10px 0;
+	color: $BLACK;
+	text-decoration: none;
+}
+
+.ui-state-highlight {background: $BRAND_LIGHT;}
+
+.ui-state-default:hover,
+.ui-state-default:focus,
+.ui-state-default.ui-state-active {
+	background: $BRAND_SECONDARY_LIGHT;
+	text-decoration: none;
+}
+
+.ui-datepicker-week-end .ui-state-default,
+.ui-datepicker-week-end .ui-state-default:hover,
+.ui-datepicker-week-end .ui-state-default:focus {color: $GRAY;}
+
+.ui-datepicker-other-month {
+	font-size: 0;
+	text-indent: -9999px;
+}
+
+.ui-datepicker-unselectable span:hover,
+.ui-datepicker-unselectable span:focus {background: none;}
+
+.ui-state-default.notify:after {
+	display: block;
+	content: "";
+	margin: 5px auto 0;
+	border-radius: 50%;
+	width: 10px;
+	height: 10px;
+	background: $BRAND_SECONDARY_DARK;
+}
+
+.ui-state-default:hover.notify:after,
+.ui-state-default:focus.notify:after,
+.ui-state-default.ui-state-active.notify:after {background: $WHITE;}

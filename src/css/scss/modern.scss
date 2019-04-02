@@ -1,0 +1,12 @@
+// Styles for Modern Browsers
+// =================
+// This file should only be used
+// to import scss partials
+@import "_screen";
+
+//----------------------------------------------------------------------
+// MEDIUM SIZED SCREENS
+//----------------------------------------------------------------------
+@media screen and (min-width: $WIDTH_SM) {
+    @import "_screen_md";
+}

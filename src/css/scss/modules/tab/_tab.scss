@@ -1,0 +1,100 @@
+/*----------------------------------------------------------------------
+ Tab Styles
+----------------------------------------------------------------------*/
+.tab-content {display: none;}
+
+.tab-content_scroll {
+	max-height: 400px;
+	overflow: auto;
+}
+
+.tab-content-empty {
+	padding: 40px 10px;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.tab-content-empty_primary {background: $BRAND_SECONDARY_DARK;}
+.tab-content-empty_secondary {background: $BRAND_LIGHT;}
+.tab-content-empty_tertiary {background: $BRAND_TERTIARY_LIGHT;}
+.tab-content-empty_quadrary {background: $GRAY_LIGHT;}
+
+.tab-sub {
+	padding: 10px;
+	background: $GRAY_XXLIGHT;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.tab-sub-hd {
+	display: table;
+	width: 180px;
+	margin: 0 auto;
+}
+
+.tab-sub-hd > * {
+	display: table-cell;
+}
+
+.tab-sub-hd-title {
+	width: 100%;
+	text-align: center;
+}
+
+.tab-sub-hd-title > * {display: none;}
+.tab-sub-hd-title > *.active {display: inline;}
+
+.tab-sub-trigger,
+a.tab-sub-trigger ,
+a.tab-sub-trigger:hover,
+a.tab-sub-trigger:focus {
+	color: $GRAY_DARK;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.tab-sub-trigger.inActive,
+a.tab-sub-trigger.inActive {
+	color: $GRAY_LIGHT;
+	cursor: not-allowed;
+	text-decoration: none;
+} 
+
+.tab-sub-content {display: none;}
+
+.tab-sub-content.active {
+	display: block;
+	max-height: 400px;
+	position: relative;
+	overflow: auto;
+}
+
+.tab-alphaSort,
+.tab-select-sort {
+	display: block;
+	padding: 10px 0;
+	@include clearfix();
+	border-bottom: 1px solid $GRAY_LIGHT;
+}
+
+.tab-alphaSort > li {
+	width: 20%;
+	float: left;
+	border-left: 1px solid $GRAY_LIGHT;
+	color: $BRAND;
+	text-align: center;
+	cursor: pointer;
+}
+
+.tab-alphaSort > li:first-child {border-left: none;}
+
+.tab-alphaSort > li.active {
+	color: $BLACK;
+	font-weight: 700;
+	cursor: default;
+}
+
+.tab-select-sort {
+	padding: 10px;
+	text-align: center;
+}

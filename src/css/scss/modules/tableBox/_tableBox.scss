@@ -1,0 +1,30 @@
+/*----------------------------------------------------------------------
+ Table Box Styles
+----------------------------------------------------------------------*/
+.tableBox {
+	width: 100%;
+
+	> tbody > tr > td {
+		padding: 10px 5px;
+		border-top: 1px solid $GRAY_LIGHT;
+		vertical-align: middle;
+	}
+
+	> tbody > tr:first-child > td {border-top: none;}
+
+
+	.tableBox-company {
+		max-width: 100px;
+		font-weight: 700;
+		text-align: center;
+	}
+
+	.tableBox-sub {
+		width: 100%;
+
+		td {padding: 2px 5px;}
+
+		tr > td:first-child {width: 170px;}
+
+	}
+}

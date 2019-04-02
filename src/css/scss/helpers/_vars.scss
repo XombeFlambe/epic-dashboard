@@ -1,0 +1,41 @@
+//----------------------------------------------------------------------
+// Base Font Styles
+//----------------------------------------------------------------------
+$FONT_PRIMARY: 'Segoe UI', Tahoma, Geneva, Verdana, Arial, sans-serif;
+$FONT_SECONDARY: 'Segoe UI', Tahoma, Geneva, Verdana, Arial, sans-serif;
+$FONT_HEADING: 'Segoe UI', Tahoma, Geneva, Verdana, Arial, sans-serif;
+
+//----------------------------------------------------------------------
+// Common Colors
+//----------------------------------------------------------------------
+$BRAND: #3e8acc;
+$BRAND_LIGHT: #9dbbd3;
+$BRAND_DARK: #0c5793;
+
+$BRAND_SECONDARY: #9ad5de;
+$BRAND_SECONDARY_LIGHT: #b7e1e8;
+$BRAND_SECONDARY_DARK: #70c4d1;
+
+$BRAND_TERTIARY: #50bc83;
+$BRAND_TERTIARY_LIGHT: #84d0a8;
+
+$BRAND_ED: #0091d2;
+$BRAND_FB: #c52c32;
+
+$GRAY: #babfc6;
+$GRAY_LIGHT: #d2d8e0;
+$GRAY_XLIGHT: #e1e5ea;
+$GRAY_XXLIGHT: #eeeff0;
+$GRAY_XXXLIGHT: #f7f8f8;
+$GRAY_DARK: #56616b;
+
+$WHITE: #FFFFFF;
+$BLACK: #000000;
+
+//----------------------------------------------------------------------
+// Widths
+//----------------------------------------------------------------------
+$SITE_MAX_WIDTH: 1250px;
+$WIDTH_SM: 768px;
+
+$BOX-SHADOW: 3px 5px 0 rgba(1, 1, 1, 0.11);

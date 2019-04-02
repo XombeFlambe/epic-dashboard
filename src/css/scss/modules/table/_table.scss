@@ -1,0 +1,72 @@
+/*----------------------------------------------------------------------
+ Custom Table Styles
+----------------------------------------------------------------------*/
+table.table_sort {
+	width: 100%;
+
+	thead {
+		background: $BLACK;
+		color: $WHITE;
+
+		th {
+			padding: 5px 15px 5px 5px;
+			border-left: 1px solid $WHITE;
+			border-bottom: 0;
+			position: relative;
+		}
+
+		th:first-child {border: none;}
+
+		.table-sort {
+			position: absolute;
+			margin-top: -5px;
+			top: 50%;
+			right: 5px;
+			cursor: pointer;
+		}
+
+		.table-sort:before,
+		.table-sort:after {
+			display: block;
+			content: "";
+			width: 0;
+			height: 0;
+			transition: transform .3s ease-out;
+		}
+
+		.table-sort:before {
+			border-left: 4px solid transparent;
+			border-right: 4px solid transparent;
+			border-bottom: 4px solid $WHITE;
+		}
+
+		.table-sort:after {
+			margin-top: 2px;
+			border-left: 4px solid transparent;
+			border-right: 4px solid transparent;
+			border-top: 4px solid $WHITE;
+		}
+
+		.table-sort.desc:before {border-bottom: 4px solid transparent;}
+		.table-sort.asc:after {border-top: 4px solid transparent;}
+
+	}
+
+	tbody td {
+		padding: 5px;
+		vertical-align: middle;
+	}
+
+	tbody td:first-child {padding-left: 10px;}
+	tbody td:last-child {padding-right: 10px;}
+}
+
+.table_primary,
+.table_secondary,
+.table_tertiary,
+.table_quadrary {tbody td:last-child {text-align: right;}}
+
+.table_primary {tbody tr:nth-child(2n) {background: $BRAND_SECONDARY;}}
+.table_secondary {tbody tr:nth-child(2n) {background: $BRAND_LIGHT;}}
+.table_tertiary {tbody tr:nth-child(2n) {background: $BRAND_TERTIARY_LIGHT;}}
+.table_quadrary {tbody tr:nth-child(2n) {background: $BRAND_TERTIARY_LIGHT;}}

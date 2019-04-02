@@ -1,0 +1,18 @@
+/*----------------------------------------------------------------------
+ Sector Styles
+----------------------------------------------------------------------*/
+.sector {
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    border-top: 2px solid #6d8b91;
+}
+
+.sector:last-child {
+    padding-bottom: 40px;
+}
+
+.sector-hd {
+    border-bottom: 1px solid #bfd9df;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+}

@@ -1,0 +1,93 @@
+<!-- index.nunjucks -->
+{% extends "layout.html" %}
+
+{% block content %}
+            <!-- PLACEHOLDER HEADER IMAGE FOR FE PROTOTYPE MINDLAB REVEAL -->
+            <div class="wrap">
+                <img src="./media/images/epic-header-trim.png" alt="">
+            </div>
+
+            <div class="wrap wrap_content" id="top">
+                <div class="bar">
+                    <div class="bar-title">
+                        <h2 class="bar-title-hd">Quick links</h2>
+                    </div>
+                    <ul class="bar-links">
+                        <li>
+                            <a href="" class="btn btn_noShadow pushBtm10">Batch Generate</a>
+                        </li>
+                        <li>
+                            <a href="" class="btn btn_noShadow pushBtm10">Purchase Credits</a>
+                        </li>
+                        <li>
+                            <a href="" class="btn btn_noShadow pushBtm10">Manage Subaccounts</a>
+                        </li>
+                        <li>
+                            <a href="https://admin.inscape-epic.com/rpt/rpt_select_product.aspx?sample=true" target="_blank" class="btn btn_noShadow pushBtm10">Create Sample Reports</a>
+                        </li>
+                        <li><a href="" class="btn btn_noShadow pushBtm10">Create New Report</a></li>
+                    </ul>
+                </div>
+            	<div class="drag">
+                    <ul id="zone1" class="drag-col drag-zone">
+                        <li>
+                            <!-- MANAGE WIDGETS TILE -->
+                            {% include "partials/tiles/_manage-widgets.html" %}
+                        </li>
+                        <li>
+                            <!-- MESSAGE SUB ACCOUNT TILE -->
+                            {% include "partials/tiles/_message-sub.html" %}
+                        </li>
+                        <li>
+                            <!-- MESSAGE PRIMARY ACCOUNT TILE -->
+                            {% include "partials/tiles/_message-primary.html" %}
+                        </li>
+                        <li>
+                            <!-- MESSAGE WIRLY TILE -->
+                            {% include "partials/tiles/_message-wiley.html" %}
+                        </li>
+                        <li>
+                            <!-- MESSAGE EVERYTHING DISC TILE -->
+                            {% include "partials/tiles/_message-ed.html" %}
+                        </li>
+                        <li>
+                            <!-- MESSAGE FIVE BEHAVIORS TILE -->
+                            {% include "partials/tiles/_message-fb.html" %}
+                        </li>
+                    </ul>
+                    
+            		<ul class="drag-col drag-col_space"></ul>
+
+                    <ul class="drag-col drag-zone" id="zone2">
+                        <li>
+                            <!-- CREDIT BALANCE HISTORY TILE -->
+                            {% include "partials/tiles/_award-status.html" %}
+                        </li>
+                        <li>
+                            <!-- CREDIT BALANCE HISTORY TILE -->
+                            {% include "partials/tiles/_credit-balance-history.html" %}
+                        </li>
+                        <li>
+                            <!-- ACCESS CODE STATUS TILE -->
+                            {% include "partials/tiles/_access-code-status.html" %}
+                        </li>
+                        <li>
+                            <!-- MESSAGE PRIMARY ACCOUNT TILE -->
+                            {% include "partials/tiles/_subaccounts-activity.html" %}
+                        </li>
+                        <li style="display:none;">
+                            <!-- TILE EXAMPLE-->
+                            {% include "partials/tiles/_tile-example.html" %}
+                        </li>
+                    </ul>
+            	</div>
+            </div>
+
+            <!-- PLACEHOLDER FOOTER IMAGE FOR FE PROTOTYPE MINDLAB REVEAL -->
+            <div class="wrap">
+                <img src="./media/images/epic-footer-trim.png" alt="">
+            </div>
+
+            <div class="autoScroll autoScroll_top js-autoScroll"></div>
+            <div class="autoScroll autoScroll_bottom js-autoScroll"></div>
+{% endblock %}

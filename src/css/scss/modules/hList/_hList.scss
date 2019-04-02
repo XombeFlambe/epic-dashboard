@@ -1,0 +1,23 @@
+/*----------------------------------------------------------------------
+ Horizontal List Styles
+----------------------------------------------------------------------*/
+.hList {margin: 0 0 20px -10px;}
+
+.hList > li {
+	display: inline-block;
+	padding: 0 10px 5px;
+}
+
+.hList_pipe {overflow: hidden;}
+
+.hList_pipe > li {position: relative;}
+
+.hList_pipe > li:before {
+	display: table;
+	content: "|";
+	position: absolute;
+	top: 0;
+	left: -3px;
+}
+
+.hList_pipe > li:first-child:before {display: none;}

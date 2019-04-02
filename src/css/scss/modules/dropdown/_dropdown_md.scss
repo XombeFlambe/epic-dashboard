@@ -1,0 +1,24 @@
+/*------------------------------------------------------------------
+Dropdown Med
+------------------------------------------------------------------*/
+.dropdown {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.dropdown-trigger {
+	display: inline-block;
+	width: inherit;
+}
+
+.dropdown:hover > .dropdown-content {display: block;}
+
+.dropdown-content {
+	position: absolute;
+	left: 0;
+	top: 30px;
+}
+
+.dropdown-trigger i {margin-left: 5px;}
+
+.dropdown:hover > .dropdown-trigger i {transform: rotate(-180deg);}

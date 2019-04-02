@@ -1,0 +1,106 @@
+/*----------------------------------------------------------------------
+ Tile Styles
+----------------------------------------------------------------------*/
+.tile {
+	max-width: 732px;
+	margin-bottom: 20px;
+	border: 1px solid $GRAY_LIGHT;
+	//box-shadow: $BOX_SHADOW;
+	background: $WHITE;
+	@include baseText();
+}
+
+@media screen and (min-width: $WIDTH_SM) {
+	.tile {max-width: 612px;}
+}
+
+.tile-hd {
+	display: table;
+	width: 100%;
+	padding: 10px;
+}
+
+.tile-hd > * {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.tile-hd > i,
+.tile-icon-fixedWidth {
+	cursor: move;
+	cursor: grab;
+}
+
+.tile-icon-fixedWidth {width: 22px;}
+
+.tile-hd-title {
+	width: 100%;
+	padding: 0 10px;
+}
+
+.tile-toggle {
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.tile-bd {position: relative;}
+
+.tile-bd-hd {
+	padding: 10px;
+	margin-bottom: 10px;
+	background: $GRAY_XXLIGHT;
+	font-size: 16px;
+	font-weight: 700;
+	text-align: center;
+}
+
+.tile-bd_scroll {
+	max-height: 400px;
+	overflow: auto;
+}
+
+.tile-bd-content {padding: 0 10px;}
+
+.tile-ft {
+	padding: 10px;
+	border-top: 1px solid $GRAY_LIGHT;
+	@include clearfix();
+}
+
+.tile-ft-float:first-child {float: left;}
+.tile-ft-float:last-child {float: right;}
+.tile-ft-float_left:last-child {float:left;}
+
+.tile-ft_secondary {background: rgba(255,255,255,.2);}
+
+@media screen and (max-width: 1023px) {
+    .tile-ft {
+		text-align: center;
+	}
+
+	.tile-ft-float:first-child {
+		float: none;
+		margin-bottom: 10px;
+	}
+
+	.tile-ft-float:last-child {float: none;}
+}
+
+.tile_grayLight {background: $GRAY_XXLIGHT;}
+.tile_grayDark {background: $GRAY_DARK;}
+.tile_ed {background: $BRAND_ED;}
+.tile_fb {background: $BRAND_FB;}
+
+.tile_grayDark,
+.tile_ed,
+.tile_fb {color: $WHITE;}
+
+.tile_ed .tile-hd,
+.tile_fb .tile-hd {
+	background-size: cover;
+	background-image: no-repeat;
+	background-position: right;
+}
+
+.tile_ed .tile-hd {background-image: url(../media/images/ed-bkgrd.png);}
+.tile_fb .tile-hd {background-image: url(../media/images/5b-bkgrd.png);}

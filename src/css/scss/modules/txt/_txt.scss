@@ -1,0 +1,31 @@
+/*----------------------------------------------------------------------
+ Text
+----------------------------------------------------------------------*/
+.txt {@include baseText();}
+
+.txt_sm {font-size: 12px;}
+.txt_reg {font-size: 12px;}
+.txt_med {font-size: 16px;}
+.txt_lg {font-size: 18px;}
+.txt_xlg {font-size: 20px;}
+.txt_xxlg {font-size: 28px;}
+
+.txt_light {font-weight: 300;}
+.txt_normal {font-weight: 400;}
+.txt_bold {font-weight: 700;}
+
+.txt_italic {font-style: italic;}
+
+.txt_upper {text-transform: uppercase;}
+
+.txt_inlineBlock {display: inline-block;}
+.txt_block {display: block;}
+
+.txt_center {text-align: center;}
+
+.txt_white {color: $WHITE;}
+.txt_gray {color: $GRAY_DARK;}
+.txt_green {color: $BRAND_TERTIARY;}
+.txt_teal {color: $BRAND_SECONDARY_DARK;}
+.txt_blue {color: $BRAND;}
+.txt_blueDark {color: $BRAND_DARK;}

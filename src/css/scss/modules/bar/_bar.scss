@@ -1,0 +1,25 @@
+/*------------------------------------------------------------------
+Bar
+------------------------------------------------------------------*/
+.bar {
+	margin-bottom: 20px;
+	background: $GRAY_DARK;
+	color: $WHITE;
+}
+
+.bar-title {
+	display: inline-block;
+	min-width: 120px;
+	padding: 10px;
+}
+
+.bar-title-hd {font-size: 18px;}
+
+.bar-links {padding: 0 10px;}
+
+.bar-links > li { 
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.bar-links > li:last-child {margin-right: 0;}

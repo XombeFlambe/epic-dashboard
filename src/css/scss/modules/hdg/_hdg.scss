@@ -1,0 +1,19 @@
+/*----------------------------------------------------------------------
+ Headings
+----------------------------------------------------------------------*/
+.hdg {
+	color: $BLACK;
+	font-family: $FONT_HEADING;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 1.4;
+}
+
+.hdg_alignV > * {vertical-align: middle;}
+
+.hdg_white {color: $WHITE;}
+
+.hdg_pushBtm {margin-bottom: 20px;}
+.hdg_pushBtmSm {margin-bottom: 10px;}
+.hdg_pushTop {margin-top: 20px;}
+.hdg_pullTop {margin-top: -20px;}

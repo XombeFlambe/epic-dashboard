@@ -1,0 +1,43 @@
+/*----------------------------------------------------------------------
+ WYSIWYG
+----------------------------------------------------------------------*/
+.wysiwyg {
+
+	h1, h2, h3, h4, h5, h6 {
+		margin-bottom: 10px;
+		font-weight: bold;
+	}
+
+	h1 {font-size: 20px;}
+	h2 {font-size: 18px;}
+	h3 {font-size: 16px;}
+	h4, h5, h6 {font-size: 14px;}
+
+	p {margin-bottom: 10px;}
+
+	b, strong {font-weight: bold;}
+
+	i, em {font-style: italic;}
+
+	u {text-decoration: underline;}
+
+	ul, ul li {list-style-type: disc;}
+
+	ol, ol li {list-style-type: decimal;}
+
+	ul, ol {margin: 0 0 20px 20px;}
+
+	img {
+		height: auto;
+		width: auto;
+   		max-width: 100%;
+   		margin-bottom: 10px;
+   		vertical-align: middle;
+   		-ms-interpolation-mode: bicubic;
+	}
+}
+
+.wysiwyg * {
+	word-break: break-word;
+	word-wrap: break-word;
+}

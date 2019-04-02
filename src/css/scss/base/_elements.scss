@@ -1,0 +1,25 @@
+html,
+body {-webkit-font-smoothing: antialiased;}
+
+body {
+	overflow: hidden;
+    background: $WHITE;
+}
+
+body * {box-sizing: border-box;}
+
+body b {font-weight: 700;}
+
+body p {
+	margin-bottom: 10px;
+	line-height: 1.25;
+}
+
+pre {word-wrap: break-word;}
+
+::selection {
+  background: $BRAND_SECONDARY; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: $BRAND_SECONDARY; /* Gecko Browsers */
+}

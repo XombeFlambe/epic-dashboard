@@ -1,0 +1,41 @@
+/*------------------------------------------------------------------
+Forms
+------------------------------------------------------------------*/
+.selectWrap {
+    padding: 0 5px 10px;
+    border-bottom: 1px solid $GRAY_XLIGHT;
+    text-align: center;
+}
+
+.select {
+    padding: 6px 10px 7px;
+    border: 1px solid $GRAY;
+    border-radius: 24px;
+    font-weight: 700;
+}
+
+.checkbox {
+    display: table;
+    position: relative;
+}
+
+.checkbox > * {display: table-cell;}
+
+.checkbox input[type="checkbox"] {
+    position: absolute;
+    left: -9999px;
+    text-indent: -9999px;
+}
+
+.checkbox > * {user-select: none;}
+
+.checkbox input[type="checkbox"] + span {
+    padding-right: 5px;
+    cursor: pointer;
+}
+
+.checkbox input[type="checkbox"] + span > .icon-square {display: inline-block}
+.checkbox input[type="checkbox"] + span > .icon-check-square {display: none;}
+
+.checkbox input[type="checkbox"]:checked + span > .icon-square {display: none;}
+.checkbox input[type="checkbox"]:checked + span > .icon-check-square {display: inline-block;}

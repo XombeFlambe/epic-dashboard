@@ -1,0 +1,35 @@
+/*------------------------------------------------------------------
+Dropdown
+------------------------------------------------------------------*/
+.dropdown {
+	position: relative;
+}
+
+.dropdown-trigger {
+	display: block;
+	width: 100%;
+	padding: 5px 0;
+	@include clearfix();
+}
+
+.dropdown-trigger:hover,
+.dropdown-trigger:focus {text-decoration: none;}
+
+.dropdown-trigger i {
+	float: right;
+	transition: transform .3s linear;
+}
+
+.dropdown-trigger i.isActive {transform: rotate(-180deg);}
+
+.dropdown-content {
+	display: none;
+	min-width: 100%;
+	background: $GRAY_DARK;
+}
+
+.dropdown-content a {
+	display: block;
+	padding: 5px 10px;
+	color: $WHITE;
+}

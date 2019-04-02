@@ -1,0 +1,15 @@
+/*----------------------------------------------------------------------
+ Blocks
+----------------------------------------------------------------------*/
+$MAX_WIDTH: $SITE_MAX_WIDTH; /* Set max width here */
+$BLOCK_GUTTER: 20px; /* Set gutter width here */
+
+$BLOCK_WIDTH: 100%;
+$BLOCK_MARGIN: $BLOCK_WIDTH * ($BLOCK_GUTTER / $MAX_WIDTH);
+
+.blocks > li {
+  width: 100%;
+  margin: 0 0 20px 0;
+}
+
+.blocks_2to4 > li {width: ($BLOCK_WIDTH - ($BLOCK_MARGIN * 4)) / 4;}

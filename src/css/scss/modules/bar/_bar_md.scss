@@ -1,0 +1,29 @@
+/*------------------------------------------------------------------
+Bar Med
+------------------------------------------------------------------*/
+.bar {
+	display: table;
+	width: 100%;
+	text-align: left;
+}
+
+.bar-title {
+	display: table-cell;
+	padding-top: 15px;
+	vertical-align: top;
+}
+
+.bar-links {
+	display: table-cell;
+	padding: 10px 10px 0 10px;
+	text-align: right;
+	vertical-align: middle;
+}
+
+.bar-links > li { 
+	margin-right: 0;
+	margin-left: 10px;
+}
+
+.bar-links > li:last-child {margin-right: 0;}
+.bar-links > li:first-child {margin-left: 0;}

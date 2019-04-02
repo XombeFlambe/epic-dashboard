@@ -1,0 +1,38 @@
+/*----------------------------------------------------------------------
+ Circle Styles
+----------------------------------------------------------------------*/
+.circle {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	padding-top: 14px;
+	border-radius: 50%;
+	color: $WHITE;
+	font-weight: 400;
+	font-size: 17px;
+	font-variant: small-caps;
+	line-height: 1.2;
+	text-align: center;
+	vertical-align: middle;
+	background: $BRAND;
+}
+
+.circle_sm {
+	width: 30px;
+	height: 30px;
+	padding-top: 6px;
+	background: $BRAND_SECONDARY_LIGHT;
+	color: $BLACK;
+}
+
+.circle_lg {
+	width: 70px;
+	height: 70px;
+	padding-top: 6px;
+	background: $BLACK;
+	line-height: .8;
+}
+
+.circle_secondary {background: $BRAND_SECONDARY;}
+.circle_tertiary {background: $BRAND_TERTIARY;}
+.circle_quadrary {background: $GRAY_DARK;}

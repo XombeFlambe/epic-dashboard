@@ -1,0 +1,24 @@
+/*----------------------------------------------------------------------
+ Blocks Med
+----------------------------------------------------------------------*/
+$MAX_WIDTH: $SITE_MAX_WIDTH; /* Set max width here */
+$BLOCK_GUTTER: 20px; /* Set gutter width here */
+
+$BLOCK_WIDTH: 100%;
+$BLOCK_MARGIN: $BLOCK_WIDTH * ($BLOCK_GUTTER / $MAX_WIDTH);
+
+.blocks {
+	margin-left: -$BLOCK_MARGIN;
+	@include clearfix();
+}
+
+.blocks > li {
+	float: left;
+	margin: 0 0 $BLOCK_MARGIN $BLOCK_MARGIN;
+}
+
+.blocks_4col > li {width: ($BLOCK_WIDTH - ($BLOCK_MARGIN * 4)) / 4;}
+.blocks_3col > li {width: ($BLOCK_WIDTH - ($BLOCK_MARGIN * 3)) / 3;}
+.blocks_2col > li {width: ($BLOCK_WIDTH - ($BLOCK_MARGIN * 2)) / 2;}
+
+.blocks_2to4 > li {width: ($BLOCK_WIDTH - ($BLOCK_MARGIN * 4)) / 4;}

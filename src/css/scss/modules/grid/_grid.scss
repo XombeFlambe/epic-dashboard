@@ -1,0 +1,16 @@
+/*----------------------------------------------------------------------
+ Grid
+----------------------------------------------------------------------*/
+.grid {@include clearfix();}
+
+.grid-col {
+	width: 100%;
+	margin-bottom: 20px;
+	float: left;
+}
+
+.grid_example > .grid-col {
+	padding: 5px;
+	color: $GRAY_LIGHT;
+	background: $GRAY_DARK;
+}

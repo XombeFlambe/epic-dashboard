@@ -1,0 +1,50 @@
+<!doctype html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>EPIC Dashboard FE Prototype</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <!-- STYLESHEETS -->
+        <!--build:css css/modern.min.css-->
+        <link rel="stylesheet" href="./css/modern.css">
+        <!-- endbuild -->
+        <!-- build:css css/legacy.min.css-->
+        <!--[if lt IE 9]> 
+            <link rel="stylesheet" href="./css/legacy.css">
+        <![endif]-->
+        <!-- endbuild -->
+        <link rel="stylesheet" href="./plugins/dragula/dragula.css">
+
+        <!-- FONTS -->
+        <link href='https://fonts.googleapis.com/css?family=Lato:400,700,300|Montserrat:400,700' rel='stylesheet' type='text/css'>
+    </head>
+    <body class="js-modalArc">
+        <!-- STICKY FOOTER -->
+        <div class="stickyFooter">
+            {% block content %} {% endblock %}
+        </div><!-- END STICKY FOOTER -->
+
+        {% include "partials/_modal-steps.html" %}
+        
+        {% include "partials/_modal.html" %}
+
+        <!--build:js js/main.min.js -->
+        <!-- endbuild -->
+        <script src="./js/vendor/jquery-1.11.3.min.js"></script>
+        <script src="./js/main.js"></script>
+
+        <script src="./plugins/dragula/dragula.js"></script>
+        <script>
+        dragula([zone1, zone2], {
+            moves: function (el, container, handle) {
+                return handle.classList.contains('icon-icons');
+            }
+        });
+        </script>
+        
+    </body>
+</html>

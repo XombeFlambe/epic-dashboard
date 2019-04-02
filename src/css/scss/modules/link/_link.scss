@@ -1,0 +1,22 @@
+/*----------------------------------------------------------------------
+ Links
+----------------------------------------------------------------------*/
+.link {@include baseLink();}
+
+.link:hover,
+.link:focus {
+	color: $BRAND_DARK;
+	text-decoration: underline;
+}
+
+.link_underline {text-decoration: underline;}
+
+.link_underline:hover,
+.link_underline:focus {text-decoration: none;}
+
+.link_white {color: $WHITE;}
+
+.link_white:hover,
+.link_white:focus {
+	color: $WHITE;
+}

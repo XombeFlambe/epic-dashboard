@@ -1,0 +1,51 @@
+/*----------------------------------------------------------------------
+ Pill Buttons
+----------------------------------------------------------------------*/
+.pill {
+    display: inline-block;
+    overflow: hidden;
+    @include clearfix();
+    border: 1px solid $GRAY;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.pill > li {
+    float: left;
+    text-align: center;
+}
+
+ul.pill > li a.pill-trigger {
+    display: block;
+    min-width: 60px;
+    padding: 8px 10px;
+    border-left: 1px solid $GRAY;
+    color: $BLACK;
+    background: $GRAY_XXXLIGHT;
+    font-family: $FONT_PRIMARY;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+ul.pill > li:first-child a.pill-trigger {border: none;}
+
+ul.pill > li a.pill-trigger:hover,
+ul.pill > li a.pill-trigger:focus {
+    background: $GRAY_XXLIGHT;
+    text-decoration: none;
+}
+
+.pill > li a.pill-trigger.active {
+    background: $GRAY_LIGHT;
+}
+
+.pill_pushTop {margin-top: 20px;}
+.pill_pushBtm {margin-bottom: 20px;}
+.pill_pushBtmSm {margin-bottom: 10px;}
+.pill_pushRight {margin-right: 20px;}

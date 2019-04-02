@@ -1,0 +1,28 @@
+/*----------------------------------------------------------------------
+ Stacks
+----------------------------------------------------------------------*/
+.stacks {
+	font-size: 0;
+}
+
+.stacks > li {
+	display: inline-block;
+  	width: 50%;
+  	margin: 0;
+  	padding: 10px;
+  	border-top: 1px solid $GRAY_XLIGHT;
+  	font-size: 14px;
+  	vertical-align: top;
+}
+
+.stacks > li:nth-child(2n+1) {border-right: 1px solid $GRAY_XLIGHT;}
+
+.stacks > li:first-child,
+.stacks > li:last-child {color: $WHITE;}
+
+.stacks > li:first-child {background: $GRAY_DARK;}
+.stacks > li:last-child {background: $BRAND_TERTIARY;}
+
+@media screen and (max-width: 479px) {
+	.stacks > li {width: 100%;}
+}

@@ -1,0 +1,25 @@
+/*----------------------------------------------------------------------
+ Checklist
+----------------------------------------------------------------------*/
+.checkList {
+	display: block;
+	width: 100%;
+}
+
+.checkList > li {
+	display: inline-block;
+	width: 48%;
+	margin-bottom: 10px;
+	vertical-align: top;
+}
+
+.checkList > li:nth-child(2n+1) {padding-right: 2%;}
+
+@media screen and (max-width: 480px) {
+	.checkList {display: block;}
+
+    .checkList > li {
+    	display: block;
+    	width: 100%;
+    }
+}
